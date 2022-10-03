@@ -47,37 +47,41 @@ public class SwitchExample {
 //            default:
 //                System.out.println("Opcion no valida");
 //        }
-        System.out.println("******Bienvenido FIFA 2022***");
-        System.out.println("a.- Jugar Partido Rapido");
-        System.out.println("b.- Multijugador");
-        System.out.println("c.- Carrera");
-        System.out.println("d.- Ultimate");
-        System.out.println("z - Exit");
-        System.out.println("***************************");
-        System.out.print("Escoge opcion: ");
-        char opcion = sc.nextLine().charAt(0); //opción caracter
-        
-        
-        switch (opcion) {
-            case 'a':
-            case 'A':
-                System.out.println("Vamos a jugar un partido rapido");
-                break;
-            case 'b':
-                System.out.println("Opcion multijugador");
-                break;
-            case 'c':
-                System.out.println("Opcion Carrera");
-                break;
-            case 'd':
-                System.out.println("Opcion Ultimate");
-                break;
-            case 'z':
-                System.out.println("Saliendo del programa");
-                break;
-            default:
-                System.out.println("Opcion no valida");
-        }
+        char opcion ;
+        do{
+            System.out.println("******Bienvenido FIFA 2022***");
+            System.out.println("a.- Jugar Partido Rapido");
+            System.out.println("b.- Multijugador");
+            System.out.println("c.- Carrera");
+            System.out.println("d.- Ultimate");
+            System.out.println("z - Exit");
+            System.out.println("***************************");
+            System.out.print("Escoge opcion: ");
+            opcion = sc.nextLine().charAt(0); //opción caracter
+
+
+            switch (opcion) {
+                case 'a':
+                case 'A':
+                    System.out.println("Vamos a jugar un partido rapido");
+                    break;
+                case 'b':
+                    System.out.println("Opcion multijugador");
+                    break;
+                case 'c':
+                    System.out.println("Opcion Carrera");
+                    break;
+                case 'd':
+                    System.out.println("Opcion Ultimate");
+                    break;
+                case 'z':
+                    System.out.println("Saliendo del programa");
+                    break;
+                default:
+                    System.out.println("Opcion no valida");
+            }
+        }while (opcion!='z');
+        //} while(!(opcion=='z'));
         
 //        if (opcion == 'a')
 //        {
