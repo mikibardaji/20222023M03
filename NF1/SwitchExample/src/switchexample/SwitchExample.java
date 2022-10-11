@@ -50,7 +50,7 @@ public class SwitchExample {
         char opcion ;
         do{
             System.out.println("******Bienvenido FIFA 2022***");
-            System.out.println("a.- Jugar Partido Rapido");
+            System.out.println("a.- Jugar Partido Rapido.");
             System.out.println("b.- Multijugador");
             System.out.println("c.- Carrera");
             System.out.println("d.- Ultimate");
