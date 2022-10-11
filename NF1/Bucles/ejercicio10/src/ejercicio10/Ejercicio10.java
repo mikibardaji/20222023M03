@@ -29,7 +29,7 @@ public class Ejercicio10 {
                     { //activo variable centinela
                         puesto_10=true;
                     }
-                 if (nota>10 || nota<-1)
+                 if (nota>10 || nota<0)
                  {
                      System.out.println("nota incorrrecta debe de estar entre 0 y 10");
                  }
