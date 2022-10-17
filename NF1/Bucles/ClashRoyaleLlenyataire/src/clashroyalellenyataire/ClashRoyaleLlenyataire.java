@@ -7,7 +7,7 @@ package clashroyalellenyataire;
 import java.util.Scanner;
 
 /**
- *
+ * enunciat https://docs.google.com/document/d/1JdPgJ2xjkbMRKXVlKU9I4cLi0Q5wKSXFqqwNpKlUjWc/edit?usp=sharing
  * @author mabardaji
  */
 public class ClashRoyaleLlenyataire {
