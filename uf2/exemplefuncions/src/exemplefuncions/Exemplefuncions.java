@@ -19,7 +19,7 @@ public class Exemplefuncions {
          int calculo=0;
        // char helloGoodbye = 'A';
         //System.out.println("idioma en main antes de llamar funcion " + idioma );
-        //imprimeHelloWorldIdiomas(idioma);
+        imprimeHelloWorldIdiomas(idioma);
         //System.out.println("idioma en main despues de llamar funcion " + idioma );
         //System.out.println(idioma);      
         System.out.println("antes de llamar al doble" + calculo);
@@ -30,9 +30,15 @@ public class Exemplefuncions {
         System.out.println("despues de llmar calculo a doble" + calculo);
         int variabledoble = doble(idioma);
         System.out.println("despues de llmar  variabledoble a doble" + variabledoble);
-        
+        System.out.println("el doble es " + doble(julia));
     }
     
+
+    /**
+     * devuelve el doble de un numero
+     * @param a entero que sera el numero que se doblara
+     * @return devuelve el doble de a
+     */
     
     public static int doble(int a) {
         int resultado = a * 2;
