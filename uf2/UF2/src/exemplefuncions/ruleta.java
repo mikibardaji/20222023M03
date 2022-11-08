@@ -17,7 +17,7 @@ public class ruleta {
     public static void main(String[] args) {
         int saldo=100,bola_player, apuesta, ball, dinero_ganado;
         boolean winner;
-        char seguir;
+        String seguir;
         
         do{
         bola_player = pedirNumero();
@@ -188,7 +188,7 @@ Dentro se debera preguntar si quiere jugar, el usuario indicara con s/S o n/N si
 Returns:
     Contestación usuario si sigue jugando o no 
      */
-    public static char seguirJugando()
+    public static char seguirJugandoChar()
     {
         Scanner sc = new Scanner(System.in);
         char eleccio=' ';
@@ -196,6 +196,18 @@ Returns:
             System.out.println("Quieres seguir jugando(s/S o n/N)? ...");
             eleccio = sc.next().charAt(0);
         }while(!(eleccio=='s' || eleccio=='S' || eleccio=='n' || eleccio=='N'));
+        return eleccio;
+    }
+    
+    
+    public static String seguirJugando()
+    {
+        Scanner sc = new Scanner(System.in);
+        String eleccio;
+        do{
+            System.out.println("Quieres seguir jugando(SI/NO)? ...");
+            eleccio = sc.nextLine();
+        }while(!(eleccio.equalsIgnoreCase("Si") || eleccio.equalsIgnoreCase("No")));
         return eleccio;
     }
     
@@ -208,10 +220,10 @@ Parameters:
 Returns:
     true si se dan las condiciones para seguir jugando , false en caso contrario 
      */
-    public static boolean continuarJugando​(char respuesta, int dinero)
+    public static boolean continuarJugando​(String respuesta, int dinero)
     {
         boolean correcto= false;
-        if((respuesta=='s' || respuesta=='S') && dinero>0)
+        if(respuesta.equalsIgnoreCase("SI") && dinero>0)
         {
             correcto = true;
         }
