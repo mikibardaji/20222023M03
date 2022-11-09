@@ -4,6 +4,7 @@
  */
 package exemplefuncions;
 
+import PackageMath.Utilitats;
 import java.util.Scanner;
 
 /**
@@ -15,11 +16,11 @@ public class MillasKmApp {
     
     
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        //Scanner sc = new Scanner(System.in);
         int millas;
         double km;
-        System.out.println("Escribe las millas que quieres pasar a kilometros"); 
-        millas = sc.nextInt();
+//        System.out.println("Escribe las millas que quieres pasar a kilometros"); 
+        millas = Utilitats.pedirValorPositivoFrase("Escribe las millas que quieres pasar a kilometros");
         km = millas_a_kilometros(millas);
         
         System.out.println("Los kilometros son " +km);

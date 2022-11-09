@@ -4,6 +4,7 @@
  */
 package exemplefuncions;
 
+import PackageMath.Utilitats;
 import java.util.Scanner;
 
 /**
@@ -15,7 +16,7 @@ public class exer10Mayor {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Pon un numero:");
-        int numero1 = sc.nextInt();
+        int numero1 = Utilitats.pedirValorPositivo();
         System.out.print("Pon el segundo numero:");
         int numero2 = sc.nextInt();
         System.out.print("Pon el tercer numero:");

@@ -4,6 +4,7 @@
  */
 package exemplefuncions;
 
+import PackageMath.Utilitats;
 import java.util.Scanner;
 
 /**
@@ -26,7 +27,7 @@ public class MayorEdad {
         System.out.println("Pon la edad que tienes");
         int edad = sc.nextInt();
         //llamar a la función que te devuelve true/fasle si eres matyo
-        mayor=esMayorEdad(edad);
+        mayor=Utilitats.esMayorEdad(edad);
         //dependiendo de lo uqe te haya escribir eres mayor de edad o menor
         if(mayor==true)
         {
@@ -41,23 +42,23 @@ public class MayorEdad {
         
     } //fi main
 
-    public static boolean esMayorEdad(int a)
-    {
-        boolean mayor;
-        if(a>=18)
-            {
-                //return true;
-                mayor=true;
-            }
-        else
-            {
-                mayor=false;
-                //return false;
-            }
-        
-        
-        return mayor;
-    }
-
+//    public static boolean esMayorEdad(int a)
+//    {
+//        boolean mayor;
+//        if(a>=18)
+//            {
+//                //return true;
+//                mayor=true;
+//            }
+//        else
+//            {
+//                mayor=false;
+//                //return false;
+//            }
+//        
+//        
+//        return mayor;
+//    }
+//
 
 }
