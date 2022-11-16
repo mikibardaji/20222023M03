@@ -47,11 +47,11 @@ public class FactorialRecursiu {
          //el valor dels parametre de la crida i potser alguna operació
          else //if n>1 
          {
-             System.out.println("crido a " + n + "*factorial(" + (n-1) + ")");
-             Thread.sleep(1000);
+             //System.out.println("crido a " + n + "*factorial(" + (n-1) + ")");
+             //Thread.sleep(1000);
              resultado = n * factorial(n-1);
-             Thread.sleep(1000);
-             System.out.println("factorial("+ n +") retorna " + resultado);
+             //Thread.sleep(1000);
+             //System.out.println("factorial("+ n +") retorna " + resultado);
             return resultado;
          }
         // return 0;
