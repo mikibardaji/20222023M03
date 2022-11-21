@@ -124,6 +124,20 @@ public class ConillsFibonacci {
      * desde el numero que s'ha introduit fins a 2. 
      * Si s'ha introduît un numero senar, no ha de fer la suma i retornar -1 directament
      */
-    
+    public static int SumaPares(int num)
+    {
+       if(num==2) //caso base
+       {
+           return num; //que es lo que mismo que devolver 2
+       }
+       else if(num%2==1) //caso no admitido , especie base
+       {
+           return -1;
+       }
+       else
+       {
+           return num + SumaPares(num-2);
+       }
+    }
     
 }
