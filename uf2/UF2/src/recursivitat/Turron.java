@@ -11,7 +11,7 @@ import java.util.Scanner;
  * @author mabardaji
  */
 public class Turron {
-    
+    /**control**/
       public static void main(String[] args) {
              Scanner sc = new Scanner(System.in);
           System.out.println("Dime el dia de navidad en que te encuentras?");
