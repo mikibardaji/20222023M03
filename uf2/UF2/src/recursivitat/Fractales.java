@@ -22,6 +22,11 @@ public class Fractales {
           System.out.println("Perimetro total: " + perimetro_total);
     }
 
+    /**
+     * cuenta el perimetro
+     * @param lado
+     * @return 
+     */
     private static int contarPerimetroFractal(int lado) {
         if (lado==0)
         {
