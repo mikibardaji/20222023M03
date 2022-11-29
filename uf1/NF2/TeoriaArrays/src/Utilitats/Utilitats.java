@@ -96,7 +96,7 @@ public  class  Utilitats {
     
     public static void mostrarArray(int[] valores)
     {
-        for (int i = 0; i < valores.length; i++) {
+        for (int i = 0; i <= (valores.length-1); i++) {
             System.out.println("Posicio " + i + " conte -> " + valores[i]);
             
         }

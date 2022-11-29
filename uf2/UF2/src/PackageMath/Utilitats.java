@@ -43,7 +43,7 @@ public  class  Utilitats {
       }
       
       /**
-       * pedira un valor que tiene que estar comprendido entre 
+       * Función que pide un valor que tiene que estar comprendido entre 
        * n1 y n2
        * @param n1 primer valor
        * @param n2 segundo valor

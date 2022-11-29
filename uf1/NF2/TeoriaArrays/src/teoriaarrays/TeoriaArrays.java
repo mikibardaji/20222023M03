@@ -60,6 +60,7 @@ public class TeoriaArrays {
         System.out.println("Array copia ");
         Utilitats.mostrarArray(copia_notes);
         
+        System.arraycopy(notes, 0, copia_notes, 0, notes.length);
         
         
 //        int[] notes2;
