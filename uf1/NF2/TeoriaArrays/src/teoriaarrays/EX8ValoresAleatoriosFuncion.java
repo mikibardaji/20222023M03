@@ -21,12 +21,12 @@ public class EX8ValoresAleatoriosFuncion {
         Scanner sc = new Scanner(System.in);
         
         
-        inicializarArrayAleatorios
+       // inicializarArrayAleatorios
                 
-        System.out.println("Muestro array");
+     //   System.out.println("Muestro array");
         Utilitats.mostrarArray(valores_aleatorios);
        
-        System.out.println("Pon valor R");
+     //   System.out.println("Pon valor R");
         int R = sc.nextInt(); //R
 
         //li passi el array y el valor R y retorni el numero de numeruso superior a r
