@@ -20,6 +20,8 @@ public class ex17ArraysIguales {
         
         inicializarArray(valores2);
         Utilitats.Utilitats.mostrarArray(valores2);
+                
+        boolean igual = validacionIguales(valores1,valores2);
     }
 
     private static void inicializarArray(int[] valores) {
@@ -29,5 +31,16 @@ public class ex17ArraysIguales {
             valores[i] = sc.nextInt();
         }
         
+    }
+
+    private static boolean validacionIguales(int[] valores1, int[] valores2) {
+        for (int i = 0; i < valores1.length; i++) 
+        {
+            if(valores1[i]!=valores2[i])
+            {
+                return false;
+            }
+        }
+        return true;
     }
 }
