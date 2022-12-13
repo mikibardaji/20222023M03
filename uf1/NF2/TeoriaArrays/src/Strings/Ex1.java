@@ -22,7 +22,7 @@ public class Ex1 {
             System.out.println(frase.charAt(i));
         }
         
-        String[] paraules = frase.split("a");
+        String[] paraules = frase.split(" ");
         
         for (int i = 0; i < paraules.length; i++) {
             System.out.println(paraules[i]);

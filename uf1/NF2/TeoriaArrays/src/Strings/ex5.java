@@ -30,17 +30,41 @@ public class ex5 {
         frase=frase.toUpperCase();
         int[] vocales = new int[5];
          for (int i = 0; i < frase.length(); i++) {
-             if(frase.charAt(i)=='A')
-             {
-                 vocales[0] = vocales[0]+1;
-             }
-             else if(frase.charAt(i)=='E')
-             {
-                vocales[1]++;
-             }
-             /*...*/
+            switch (frase.charAt(i)) {
+                case 'A':
+                    vocales[0] = vocales[0]+1;
+                    break;
+                case 'E':
+                    vocales[1]++;
+                    break;
+                case 'I':
+                    vocales[2]++;
+                    break;
+                case 'O':
+                    vocales[3]++;
+                    break;
+                case 'U':
+                    vocales[4]++;
+                    break;
+                default:
+                    break;
+            }
          }
         
+         Utilitats.Utilitats.mostrarArray(vocales);
+         String letrasVocales = "AEIOU";
+         
+         //char[] letras = {'A','E','I','O','U'};
+         char[] letras = letrasVocales.toCharArray();
+         /*char[]letras = new char[5];
+         letras[0] = 'A';
+         letras[1] = 'A';
+         ...*/
+         for (int i = 0; i < vocales.length; i++) {
+             System.out.println("Numero de " + letras[i] + "'s =" + vocales[i]); 
+        }
+         
+         
          //recorro array y muestro
          //no lo recorro pero todas las posciones
         
