@@ -103,5 +103,19 @@ public  class  Utilitats {
     }
     
     
+    
+        /**
+     * te pedira un string y lo retorna
+     * @param pregunta el texto que se mostrara en pantalla
+     * @return la palabra introducida
+     */
+    private static String ponString(String pregunta) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(pregunta);
+        String respuesta = sc.nextLine();
+        return respuesta;
+        //return sc.nextLine();
+    }
+    
 
 }
