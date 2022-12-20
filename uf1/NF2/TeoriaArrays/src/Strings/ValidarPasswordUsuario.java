@@ -40,8 +40,8 @@ public class ValidarPasswordUsuario {
 
     /**
      * funcion que valida el usuario y el passwors
-     * @param usuario
-     * @param password
+     * @param usuario introducido previamente
+     * @param password introducdo previamente
      * @return true si los dos son validos, false si alguno o los dos
      * son invalidos
      */
