@@ -102,7 +102,13 @@ public  class  Utilitats {
         }
     }
     
-    
+    public static void mostrarArray_Integer(Integer[] valores)
+    {
+        for (int i = 0; i <= (valores.length-1); i++) {
+            System.out.println("posicio" + (i+1) + ":" + valores[i]);
+            
+        }
+    }   
     
         /**
      * te pedira un string y lo retorna

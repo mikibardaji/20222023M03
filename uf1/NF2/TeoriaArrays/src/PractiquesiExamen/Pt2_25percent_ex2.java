@@ -16,8 +16,11 @@ public class Pt2_25percent_ex2 {
         String nom;
         String posicio;
         Scanner sc= new Scanner(System.in);
-        System.out.println("Fica el teu nom");
-        nom = sc.nextLine();
+        do
+        {
+            System.out.println("Fica el teu nom");
+            nom = sc.nextLine();
+        }while(nom.length()<4);
         System.out.println("Quina part vols agafar(first/last)");
         posicio = sc.next();
         String gamer="";
