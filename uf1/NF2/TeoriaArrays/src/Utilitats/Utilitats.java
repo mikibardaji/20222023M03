@@ -115,7 +115,7 @@ public  class  Utilitats {
      * @param pregunta el texto que se mostrara en pantalla
      * @return la palabra introducida
      */
-    private static String ponString(String pregunta) {
+    public static String ponString(String pregunta) {
         Scanner sc = new Scanner(System.in);
         System.out.println(pregunta);
         String respuesta = sc.nextLine();
@@ -123,5 +123,18 @@ public  class  Utilitats {
         //return sc.nextLine();
     }
     
+    
+    public static void mostrarArray2D(int[][] mapa)
+    {
+            for (int fila = 0; fila < mapa.length; fila++) {
+            //mapa.length em dona les files
+                for (int col = 0; col < mapa[fila].length; col++) 
+                {
+                    //mapa[0].length dona les columnes existents
+                System.out.print(mapa[fila][col] + "-");
+                }
+            System.out.println("");
+        }
+    }
 
 }
